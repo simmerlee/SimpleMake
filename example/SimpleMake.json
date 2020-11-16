@@ -1,0 +1,23 @@
+{
+    "projects":[
+        {
+            "name": "aaa",
+            "output_type": ["inc", "dll"],
+            "src_build_cmd":{
+                "aa_fn1.cpp":"gcc -c -xxx $SRC/aa_fn1.cpp -o $BUILD/asdf"
+            }
+        },
+        {
+            "name": "bbb",
+            "output_type": ["inc", "lib"],
+            "output_name": "libasdfqwer.2333"
+        },
+        {
+            "name": "test",
+            "output_type": ["exe"],
+            "dependency": ["aaa", "bbb"],
+            "link_option": "-lpthread",
+            "output_name": "testtesttest.eee"
+        }
+    ]
+}
